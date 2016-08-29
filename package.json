@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Zondicons SVG icon set",
   "scripts": {
-    "build": "rm -rf ./dist && svgo --config=svgo.yml -f ./src -o ./dist/icons && svg-sprite -s --svg-xmldecl=false --dest=dist ./dist/icons/*.svg && mv ./dist/symbol/svg/sprite.css.svg ./dist/sprite.svg && rm -rf ./dist/symbol"
+    "build": "rm -rf ./dist && svgo --config=svgo.yml -f ./src -o ./dist/icons && svg-sprite -s --svg-xmldecl=false --shape-id-generator=\"zondicon-%s\" --dest=dist ./dist/icons/*.svg && mv ./dist/symbol/svg/sprite.css.svg ./dist/sprite.svg && rm -rf ./dist/symbol"
   },
   "author": "Steve Schoger <sm.schoger@gmail.com",
   "license": "MIT",
